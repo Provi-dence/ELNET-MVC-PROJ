@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|c:\\users\\steven tumbaga\\desktop\\jun\u0027s work\\ilnet proj\\dash-booking\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|solutionrelative:views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|c:\\users\\steven tumbaga\\desktop\\jun\u0027s work\\ilnet proj\\dash-booking\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|solutionrelative:views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|c:\\users\\steven tumbaga\\desktop\\jun\u0027s work\\ilnet proj\\dash-booking\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|c:\\users\\steven tumbaga\\desktop\\jun\u0027s work\\ilnet proj\\dash-booking\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|solutionrelative:views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|c:\\users\\steven tumbaga\\desktop\\jun\u0027s work\\ilnet proj\\dash-booking\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|c:\\users\\steven tumbaga\\desktop\\jun\u0027s work\\ilnet proj\\dash-booking\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|c:\\users\\steven tumbaga\\desktop\\jun\u0027s work\\ilnet proj\\dash-booking\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|c:\\users\\steven tumbaga\\desktop\\jun\u0027s work\\ilnet proj\\dash-booking\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F112E352-3FC8-4D70-8CE5-BE1842903844}|DASH-BOOKING.csproj|solutionrelative:models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Home\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Home\\Admin.cshtml",
+              "RelativeToolTip": "Views\\Home\\Admin.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABYAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T22:39:43.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAANDMzMzP7vwUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T22:09:43.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T22:06:44.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Models\\Class.cs",
+              "RelativeDocumentMoniker": "Models\\Class.cs",
+              "ToolTip": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Models\\Class.cs",
+              "RelativeToolTip": "Models\\Class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T20:03:53.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAADEAAAAAAAAAAAAUwEQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T19:54:55.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAANDMzMzPbvzAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T19:21:50.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAADAmZmZmdkhwBIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T18:02:27.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAZWZmZmYUwAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T17:13:23.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Steven Tumbaga\\Desktop\\Jun\u0027s work\\IlNet Proj\\DASH-BOOKING\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABYAAACgzMzMzOw0wCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T22:28:03.121Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
