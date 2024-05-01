@@ -1,73 +1,59 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Submit Your Event";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<!-- You need this to bind with model class ahaka -->
+@model DASH_BOOKING.Models.EventSubmissionModel
 
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <main aria-labelledby="title">
-        <section class="contact-section py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 mx-auto text-center">
-                        <h2 class="section-heading mb-5">Submit Your Event</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mx-auto">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <div id="eventForm">
-                                    <div class="form-floating mb-3">
-                                        <asp:TextBox ID="eventName" runat="server" CssClass="form-control" placeholder="Event Name" Required="true"></asp:TextBox>
-                                        <asp:Label ID="eventNameLabel" runat="server" AssociatedControlID="eventName" Text="Event Name *" CssClass="form-label"></asp:Label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <asp:TextBox ID="eventDescription" runat="server" CssClass="form-control" TextMode="MultiLine" placeholder="Event Description" Required="true" Rows="3"></asp:TextBox>
-                                        <asp:Label ID="eventDescriptionLabel" runat="server" AssociatedControlID="eventDescription" Text="Event Description *" CssClass="form-label"></asp:Label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <asp:TextBox ID="organizerName" runat="server" CssClass="form-control" placeholder="Your Name" Required="true"></asp:TextBox>
-                                        <asp:Label ID="organizerNameLabel" runat="server" AssociatedControlID="organizerName" Text="Your Name *" CssClass="form-label"></asp:Label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <asp:TextBox ID="organizerEmail" runat="server" CssClass="form-control" placeholder="Your Email Address" Required="true" TextMode="Email"></asp:TextBox>
-                                        <asp:Label ID="organizerEmailLabel" runat="server" AssociatedControlID="organizerEmail" Text="Your Email Address *" CssClass="form-label"></asp:Label>
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <asp:DropDownList ID="eventCategories" runat="server" CssClass="form-select" Required="true">
-                                            <asp:ListItem Text="Select Event Category" Value=""></asp:ListItem>
-                                            <asp:ListItem Text="RUNNING" Value="RUNNING"></asp:ListItem>
-                                            <asp:ListItem Text="BIKING" Value="BIKING"></asp:ListItem>
-                                            <asp:ListItem Text="SWIMMING" Value="SWIMMING"></asp:ListItem>
-                                            <asp:ListItem Text="ULTRAMARATHON" Value="ULTRAMARATHON"></asp:ListItem>
-                                        </asp:DropDownList>
-                                        <label class="input-group-text" for="eventCategories"><i class="fa fa-caret-down"></i></label>
-                                    </div>
-                                    <div class="text-center">
-                                        <asp:Button ID="submitEventButton" runat="server" Text="Submit Event" CssClass="btn btn-primary btn-xl text-uppercase" OnClick="submitEvent_Click" />
-                                    </div>
-                                </div>
+<section class="contact-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="section-heading mb-5">Submit Your Event</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card shadow">
+                    <div class="card-body">
+                        @using (Html.BeginForm("SubmitEvent", "Contact", FormMethod.Post, new { @id = "eventForm", @class = "needs-validation", novalidate = "novalidate" }))
+                        {
+                            <div class="form-floating mb-3">
+                                @Html.TextBoxFor(model => model.EventName, new { @class = "form-control", placeholder = "Event Name", required = "required" })
+                                @Html.LabelFor(model => model.EventName, "Event Name *", new { @class = "form-label" })
                             </div>
-                        </div>
+                            <div class="form-floating mb-3">
+                                @Html.TextAreaFor(model => model.EventDescription, new { @class = "form-control", placeholder = "Event Description", required = "required", rows = "3" })
+                                @Html.LabelFor(model => model.EventDescription, "Event Description *", new { @class = "form-label" })
+                            </div>
+                            <div class="form-floating mb-3">
+                                @Html.TextBoxFor(model => model.OrganizerName, new { @class = "form-control", placeholder = "Your Name", required = "required" })
+                                @Html.LabelFor(model => model.OrganizerName, "Your Name *", new { @class = "form-label" })
+                            </div>
+                            <div class="form-floating mb-3">
+                                @Html.TextBoxFor(model => model.OrganizerEmail, new { @class = "form-control", placeholder = "Your Email Address", required = "required", type = "email" })
+                                @Html.LabelFor(model => model.OrganizerEmail, "Your Email Address *", new { @class = "form-label" })
+                            </div>
+                            <div class="input-group mb-3">
+                                @Html.DropDownListFor(model => model.EventCategory, new SelectList(
+                                    new List<SelectListItem>
+                                    {
+                                        new SelectListItem { Text = "RUNNING", Value = "RUNNING" },
+                                        new SelectListItem { Text = "BIKING", Value = "BIKING" },
+                                        new SelectListItem { Text = "SWIMMING", Value = "SWIMMING" },
+                                        new SelectListItem { Text = "ULTRAMARATHON", Value = "ULTRAMARATHON" }
+                                    }, "Value", "Text"), "Select Event Category", new { @class = "form-select", required = "required" })
+                                <label class="input-group-text" for="eventCategories"><i class="fa fa-caret-down"></i></label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-xl text-uppercase">Submit Event</button>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-</body>
-</html>
-
-
+        </div>
+    </div>
+</section>
