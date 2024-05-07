@@ -1,0 +1,115 @@
+﻿@model List<DASH_BOOKING.Models.Event>
+
+@{
+    ViewBag.Title = "Admin Panel";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<div class="container py-5">
+    <h2 class="text-center">Organizer Events Approval</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Organizer Name</th>
+                <th>Organizer Email</th>
+                <th>Event Name</th>
+                <th>Event Description</th>
+                <th>Event Category</th>
+                <th>Status</th> <!-- Updated header for Status -->
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.OrganizerName</td>
+                    <td>@item.OrganizerEmail</td>
+                    <td>@item.EventName</td>
+                    <td>@item.EventDescription</td>
+                    <td>@item.EventCategory</td>
+                    <td>
+                        @if (item.Status == "Approved")
+                        {
+                            <span class="badge bg-success">@item.Status</span>
+                        }
+                        else if (item.Status == "Rejected")
+                        {
+                            <span class="badge bg-danger">@item.Status</span>
+                        }
+                        else if (item.Status == "Pending")
+                        {
+                            <span class="badge bg-warning text-dark">@item.Status</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">@item.Status</span>
+                        }
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary" onclick="openModal(@item.Id)">Edit</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <!-- Button trigger modal (you can place this button anywhere outside the table) -->
+    <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#editModal" id="editModalTrigger">
+        Edit Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Event</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Modal body content for Approve or Reject actions -->
+                    @using (Html.BeginForm("UpdateEventStatus", "Home", FormMethod.Post, new { id = "eventStatusForm" }))
+                    {
+                        @Html.Hidden("eventId", null, new { id = "eventIdHidden" }) <!-- Hidden field to store eventId -->
+                        <div class="form-group">
+                            <select class="form-control" name="status">
+                                <option value="Approved">Approved</option>
+                                <option value="Rejected">Rejected</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Status</button>
+                    }
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="submitEventStatus()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    var selectedEventId; // Define a global variable to store eventId
+
+    function openModal(itemId) {
+        // Set the selected item Id in the JavaScript variable
+        selectedEventId = itemId;
+        // Set the value of hidden field in the form
+        $('#eventIdHidden').val(itemId);
+        // Trigger the modal to open
+        $('#editModal').modal('show');
+    }
+
+    function submitEventStatus() {
+        // Submit the form
+        $('#eventStatusForm').submit();
+    }
+
+</script>
+
+</div>

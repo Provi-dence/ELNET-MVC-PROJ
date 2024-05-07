@@ -24,5 +24,8 @@ namespace DASH_BOOKING.Models
 
         [Required]
         public string EventCategory { get; set; }
+
+        // Add the Status property for Approved or Rejected status
+        public string Status { get; set; } // You can use enum for better representation
     }
 }

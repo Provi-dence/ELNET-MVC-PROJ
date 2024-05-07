@@ -128,7 +128,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -136,6 +135,10 @@
     <Compile Include="Migrations\202405011005218_InitialCreate.cs" />
     <Compile Include="Migrations\202405011005218_InitialCreate.Designer.cs">
       <DependentUpon>202405011005218_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405022147118_AddStatusToEvents.cs" />
+    <Compile Include="Migrations\202405022147118_AddStatusToEvents.Designer.cs">
+      <DependentUpon>202405022147118_AddStatusToEvents.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DbContext.cs" />
@@ -255,12 +258,18 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\AdminLogin.cshtml" />
-    <Content Include="Views\Home\Admin.cshtml" />
-    <Content Include="Views\Contact\ThankYou.cshtml" />
+    <Content Include="Views\Home\Panel.cshtml" />
+    <Content Include="Views\Home\ThankYou.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Shared\Admin_Layout.cshtml" />
+    <Content Include="Views\Home\Biking.cshtml" />
+    <Content Include="Views\Home\Running.cshtml" />
+    <Content Include="Views\Home\Swimming.cshtml" />
+    <Content Include="Views\Home\UltraMarathon.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DATA\" />
+    <Folder Include="Views\Contact\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -273,6 +282,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202405011005218_InitialCreate.resx">
       <DependentUpon>202405011005218_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405022147118_AddStatusToEvents.resx">
+      <DependentUpon>202405022147118_AddStatusToEvents.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

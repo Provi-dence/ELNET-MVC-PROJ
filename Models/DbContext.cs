@@ -10,6 +10,7 @@ namespace DASH_BOOKING.Models
     {
         public ApplicationDbContext() : base("DASH_BOOKINGContext")
         {
+
         }
 
         public DbSet<Event> Events { get; set; }

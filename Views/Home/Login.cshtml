@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>@ViewBag.Title</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Additional CSS styles for the login page -->
+<style>
+    .login-form {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+        .login-form label {
+            font-weight: bold;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 3px;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+            .login-form input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+
+    .error-message {
+        color: #dc3545;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+</style>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="login-form">
+                <h2 class="text-center mb-4">Admin Login</h2>
+                <div class="text-danger d-block mb-3 error-message">@ViewBag.Message</div>
+                @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+                {
+                    <label for="txtUsername">Username:</label>
+                    <input type="text" id="txtUsername" name="txtUsername" class="form-control" required />
+                    <br />
+                    <label for="txtPassword">Password:</label>
+                    <input type="password" id="txtPassword" name="txtPassword" class="form-control" required />
+                    <br />
+                    <input type="submit" value="Login" class="btn btn-primary" />
+                    <div class="form-check mt-2">
+                        <input type="checkbox" id="chkRememberMe" name="chkRememberMe" class="form-check-input" />
+                        <label for="chkRememberMe" class="form-check-label">Remember Me</label>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Additional scripts if needed -->

@@ -23,5 +23,9 @@ namespace DASH_BOOKING.Models
 
         [Required(ErrorMessage = "Event Category is required.")]
         public string EventCategory { get; set; }
+
+        /*[Required(ErrorMessage = "Status is required")]
+        public string Status { get; set; }
+        */
     }
 }

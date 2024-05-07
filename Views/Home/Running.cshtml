@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Running Events";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Assuming you have a shared layout file
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/run-cardview.jpg" class="card-img-top" alt="Running Image" style="height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">5k run & walk</h5>
+                    <p class="card-text">Footracing over a variety of distances and courses and numbering among the most popular sports in nearly all times and places. </p>
+                    @Html.ActionLink("Join Event", "RegistrationForm", "Home", new { @event = "5k Run" }, new { @class = "btn btn-primary", data_event = "5k Run" })
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/run1-cardview.jpg" class="card-img-top" alt="Running Image" style="height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Run Rio 2023</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    @Html.ActionLink("Join Event", "RegistrationForm", "Home", new { @event = "Run Rio 2023" }, new { @class = "btn btn-primary", data_event = "Run Rio 2023" })
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/run2-cardview.jpg" class="card-img-top" alt="Running Image" style="height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">39th Milo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    @Html.ActionLink("Join Event", "RegistrationForm", "Home", new { @event = "39th Milo" }, new { @class = "btn btn-primary", data_event = "39th Milo" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/run3-cardview.jpg" class="card-img-top" alt="Running Image" style="height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Run baby Run!</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    @Html.ActionLink("Join Event", "RegistrationForm", "Home", new { @event = "Run baby Run!" }, new { @class = "btn btn-primary", data_event = "Run baby Run!" })
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/run4-cardview.jpg" class="card-img-top" alt="Running Image" style="height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Sm2Sm 2023</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    @Html.ActionLink("Join Event", "RegistrationForm", "Home", new { @event = "Sm2Sm 2023" }, new { @class = "btn btn-primary", data_event = "Sm2Sm 2023" })
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/run5-cardview.png" class="card-img-top" alt="Running Image" style="height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Waterfront Run 2024</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    @Html.ActionLink("Join Event", "RegistrationForm", "Home", new { @event = "Waterfront Run 2024" }, new { @class = "btn btn-primary", data_event = "Waterfront Run 2024" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

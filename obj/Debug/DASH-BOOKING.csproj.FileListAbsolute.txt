@@ -83,3 +83,4 @@ C:\Users\Steven Tumbaga\Desktop\Jun's work\IlNet Proj\DASH-BOOKING\bin\EntityFra
 C:\Users\Steven Tumbaga\Desktop\Jun's work\IlNet Proj\DASH-BOOKING\bin\EntityFramework.SqlServer.xml
 C:\Users\Steven Tumbaga\Desktop\Jun's work\IlNet Proj\DASH-BOOKING\obj\Debug\DASH_BOOKING.Migrations.InitialCreate.resources
 C:\Users\Steven Tumbaga\Desktop\Jun's work\IlNet Proj\DASH-BOOKING\obj\Debug\DASH-BOOKING.csproj.GenerateResource.cache
+C:\Users\Steven Tumbaga\Desktop\Jun's work\IlNet Proj\DASH-BOOKING\obj\Debug\DASH_BOOKING.Migrations.AddStatusToEvents.resources
